@@ -6,7 +6,13 @@ from django.views.generic import TemplateView
 class HomeView(TemplateView):
     template_name='index.html'
 
-class CreditosView(TemplateView):
-    template_name='creditos.html'
 
+class EstudiantesView(TemplateView):
+    template_name='estudiantes.html'
+
+class AdministradoresView(TemplateView):
+    template_name='administradores.html'
+
+class AcercaDeView(TemplateView):
+    template_name='acerca de.html'
     

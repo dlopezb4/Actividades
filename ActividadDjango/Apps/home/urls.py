@@ -16,9 +16,11 @@ Including another URLconf
 from Apps.home.views import HomeView
 from django.contrib import admin
 from django.urls import path
-from .views import HomeView,CreditosView
+from .views import HomeView,EstudiantesView,AdministradoresView,AcercaDeView
 
 urlpatterns = [
     path('index/', HomeView.as_view(), name='home'),
-    path('creditos/', CreditosView.as_view(), name='creditos'),
+    path('estudiantes/', EstudiantesView.as_view(), name='estudiantes'),
+    path('administradores/', AdministradoresView.as_view(), name='administradores'),
+    path('acerca de/', AcercaDeView.as_view(), name='acerca de'),
 ]
