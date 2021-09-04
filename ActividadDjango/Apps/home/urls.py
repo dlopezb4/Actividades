@@ -22,5 +22,5 @@ urlpatterns = [
     path('index/', HomeView.as_view(), name='home'),
     path('estudiantes/', EstudiantesView.as_view(), name='estudiantes'),
     path('administradores/', AdministradoresView.as_view(), name='administradores'),
-    path('acerca de/', AcercaDeView.as_view(), name='acerca de'),
+    path('acercade/', AcercaDeView.as_view(), name='acercade'),
 ]
