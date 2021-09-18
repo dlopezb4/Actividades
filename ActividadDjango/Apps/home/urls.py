@@ -1,4 +1,4 @@
-""" Home Actividad1 URL Configuration
+"""HOME Actividad2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -16,11 +16,9 @@ Including another URLconf
 from Apps.home.views import HomeView
 from django.contrib import admin
 from django.urls import path
-from .views import HomeView,EstudiantesView,AdministradoresView,AcercaDeView
+from .views import HomeView,CreditosView
 
 urlpatterns = [
     path('index/', HomeView.as_view(), name='home'),
-    path('estudiantes/', EstudiantesView.as_view(), name='estudiantes'),
-    path('administradores/', AdministradoresView.as_view(), name='administradores'),
-    path('acercade/', AcercaDeView.as_view(), name='acercade'),
+    path('creditos/', CreditosView.as_view(), name='creditos'),
 ]
