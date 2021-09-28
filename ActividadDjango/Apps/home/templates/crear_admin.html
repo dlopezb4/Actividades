@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% block Administradores %}
+<h2>Crear administrador</h2>
+<form method="POST">
+    {% csrf_token %} 
+    Nombre {{ form.nombre}}
+    Apellido {{ form.apellido}}
+    Direccion {{ form.direccion}}
+    <input type="submit" name="Guardar"><p>
+</form>
+<a href="{% url 'home:administradores' %}">Regresar</a>
+{% endblock%}

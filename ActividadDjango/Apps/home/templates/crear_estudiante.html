@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block Estudiantes %}
+
+<h2>Crear estudiante</h2>
+<form method="POST">
+    {% csrf_token %} 
+    Nombre {{ form.nombre}}
+    Apellido {{ form.apellido}}
+    Direccion {{ form.direccion}}
+    <input type="submit" name="Guardar"><p>
+</form>
+<a href="{% url 'home:estudiantes' %}">Regresar</a>
+
+{% endblock%}
+
+

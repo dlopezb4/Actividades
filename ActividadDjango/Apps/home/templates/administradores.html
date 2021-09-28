@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block Administradores %}
+
+    <table border="2">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Direccion</td>
+        </tr>
+        {% for adm in object_list %}  
+        <tr>
+            <td>{{ adm.nombre }}</td>
+            <td>{{ adm.apellido }}</td>
+            <td>{{ adm.direccion }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Crear administrador</h2>
+    <a href="{% url 'home:Crear'%}">Crear</a>
+{% endblock%}
